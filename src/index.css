@@ -6,9 +6,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: radial-gradient( #1b2735 0%,#090a0f 100%);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#topNav {
+  background: rgb(32,169,171);
+  background: linear-gradient(330deg, rgba(32,169,171,1) 14%, rgba(84,196,35,1) 100%);
 }
