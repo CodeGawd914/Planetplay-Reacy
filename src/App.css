@@ -1,3 +1,10 @@
+
+
+@font-face {
+  src:url(Fonts/KGSummerStormSmooth.ttf);
+  font-family: KG;
+}
+
 .App {
   text-align: center;
 }
@@ -6,6 +13,12 @@
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
   pointer-events: none;
+}
+
+.smooth {
+  font-family: KG ;
+  font-size: 16px;
+
 }
 
 .neon1 {
@@ -21,6 +34,20 @@
                 0px 0px 70px gold;
 }
 
+.neonRed {
+  color: #fff;
+
+  text-align: center;
+  text-shadow:  0px 0px 10px red,
+                0px 0px 20px red,
+                0px 0px 30px red,
+                0px 0px 40px red,
+                0px 0px 50px red,
+                0px 0px 60px red,
+                0px 0px 70px red;
+
+}
+
 .neon3 {
   color: #fff;
 
@@ -34,6 +61,70 @@
                 0px 0px 70px blue;
 }
 
+.neonPink {
+  color: #fff;
+
+  text-align: center;
+  text-shadow:  0px 0px 10px pink,
+                0px 0px 20px pink,
+                0px 0px 30px pink,
+                0px 0px 40px pink,
+                0px 0px 50px pink,
+                0px 0px 60px pink,
+                0px 0px 70px pink;
+}
+
+.neonGreen {
+  color: #fff;
+
+  text-align: center;
+  text-shadow:  0px 0px 10px green,
+                0px 0px 20px green,
+                0px 0px 30px green,
+                0px 0px 40px green,
+                0px 0px 50px green,
+                0px 0px 60px green,
+                0px 0px 70px green;
+}
+
+.neonSilver {
+  color: #fff;
+
+  text-align: center;
+  text-shadow:  0px 0px 10px silver,
+                0px 0px 20px silver,
+                0px 0px 30px silver,
+                0px 0px 40px silver,
+                0px 0px 50px silver,
+                0px 0px 60px silver,
+                0px 0px 70px silver;
+}
+
+.neonLime {
+  color: #fff;
+
+  text-align: center;
+  text-shadow:  0px 0px 10px lime,
+                0px 0px 20px lime,
+                0px 0px 30px lime,
+                0px 0px 40px lime,
+                0px 0px 50px lime,
+                0px 0px 60px lime,
+                0px 0px 70px lime;
+}
+
+.neonAqua {
+  color: #fff;
+
+  text-align: center;
+  text-shadow:  0px 0px 10px aqua,
+                0px 0px 20px aqua,
+                0px 0px 30px aqua,
+                0px 0px 40px aqua,
+                0px 0px 50px aqua,
+                0px 0px 60px aqua,
+                0px 0px 70px aqua;
+}
 .footer3 {
   font-size: 10px;
   font-weight: bold;
@@ -41,6 +132,54 @@
 
 .logof {
   object-fit: fill;
+}
+
+#card1 {
+  font-family: KG ;
+  background: rgb(222,8,8);
+  background: linear-gradient(347deg, rgba(222,8,8,0.8463760504201681) 14%, rgba(184,196,35,1) 99%);
+
+}
+
+#card2 {
+  background: rgb(192,222,8);
+  background: linear-gradient(347deg, rgba(192,222,8,0.8463760504201681) 14%, rgba(35,195,196,1) 99%);
+}
+#card3 {
+  background: rgb(192,222,8);
+background: linear-gradient(347deg, rgba(192,222,8,0.8463760504201681) 14%, rgba(75,35,196,1) 99%);
+}
+
+#card4 {
+  background: rgb(131,58,180);
+background: linear-gradient(347deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 77%);
+}
+
+#card5 {
+  background: rgb(53,121,9);
+background: linear-gradient(347deg, rgba(53,121,9,1) 27%, rgba(205,2,146,1) 65%, rgba(1,205,237,1) 75%, rgba(0,212,255,1) 79%);
+}
+
+#card6 {
+  background: rgb(1,205,237);
+background: linear-gradient(110deg, rgba(1,205,237,1) 7%, rgba(121,9,11,1) 26%, rgba(173,205,2,1) 55%, rgba(132,0,255,1) 79%);
+
+}
+
+#card7 {
+  background: rgb(41,222,8);
+background: linear-gradient(347deg, rgba(41,222,8,0.9920343137254902) 14%, rgba(226,238,32,1) 99%);
+}
+
+#card8 {
+  background: rgb(41,222,8);
+background: linear-gradient(347deg, rgba(41,222,8,0.9920343137254902) 14%, rgba(201,49,65,1) 75%, rgba(222,32,238,1) 99%);
+}
+
+#card9 {
+  background: rgb(8,113,222);
+background: linear-gradient(347deg, rgba(8,113,222,0.9920343137254902) 14%, rgba(201,49,65,1) 75%, rgba(32,102,238,1) 99%);
+
 }
 
 #topNav {

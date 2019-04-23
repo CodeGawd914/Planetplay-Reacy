@@ -13,6 +13,7 @@ import Cosmic from './Containers/Cosmic'
 import Home from './Containers/Home'
 import Footer from "./Containers/Footer"
 import BdayParties from './Containers/BdayParties'
+import Gallary from './Components/Gallary'
 
 
 
@@ -34,16 +35,16 @@ class App extends Component {
   render() {
     return (
 
-      <div>
+      <div className='App'>
       <Navbar/>
-      <div className="wrapper">
-      <div id="stars"></div>
-      <div id="stars1"></div>
-      <div id="stars3"></div>
-      </div>
-      <Particles params={particleOpt} className="background"/>
+        <div className="wrapper">
+          <div id="stars"></div>
+          <div id="stars1"></div>
+          <div id="stars3"></div>
+        </div>
       <br></br>
       <Switch>
+        <Route exact path='/Gallary' component ={Gallary}/>
         <Route exact path="/Cosmic" component={Cosmic}/>
         <Route exact path="/AboutUs" component={AboutUs}/>
         <Route exact path="/Attractions" component={Attractions}/>

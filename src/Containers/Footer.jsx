@@ -5,6 +5,7 @@ import logo from '../images/logoLong.jpg'
 
 
 
+
 class Footer extends Component {
 
   render() {
@@ -90,7 +91,7 @@ class Footer extends Component {
          <List.Item as={Link} to="">Planet Play Home</List.Item>
         </List>
         </Grid.Column>
-       <Grid.Column>
+       <Grid.Column className='footer3 neonSilver'>
        <Header icon textAlign='center'>
      <Header.Content>418 Bedford Avenue Bellmore, NY 11710</Header.Content>
      <Header.Content>516-369-3260</Header.Content>

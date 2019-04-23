@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Table, Icon } from 'semantic-ui-react'
+import {Table, Icon, Segment } from 'semantic-ui-react'
 import Events from "../Components/Events"
 
 
@@ -69,13 +69,19 @@ class Schedule extends Component {
 
   <Events id='Events'/>
   <div id='classes'>
-    <h1> Testing for componneteadfsefoseisoegi</h1>
+  <Segment  color='red' inverted attached>
+    <h1> Testing for classes section </h1>
+  </Segment>
   </div>
   <div id='calendar'>
-  <h1> Testing for componneteadfsefoseisoegi</h1>
+  <Segment  color='blue' inverted attached>
+    <h1> Testing for componneteadfsefoseisoegi</h1>
+  </Segment>
   </div>
   <div id='Sss'>
-  <h1> Testing for componneteadfsefoseisoegi</h1>
+  <Segment color='green' inverted >
+  <h1> Testing for non attached segment</h1>
+  </Segment>
   </div>
       </div>
     );
