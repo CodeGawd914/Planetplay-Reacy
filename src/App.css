@@ -5,6 +5,10 @@
   font-family: KG;
 }
 
+@font-face {
+  src:url(Fonts/Gilroy-Medium.otf);
+  font-family: gilroy;
+}
 .App {
   text-align: center;
 }
@@ -18,9 +22,26 @@
 .smooth {
   font-family: KG ;
   font-size: 16px;
-
 }
 
+.gilroy{
+  font-family: gilroy ;
+  font-size: 32px;
+}
+
+.grid {
+  display: inline-grid;
+}
+
+.neon1h {
+  color: #fff;
+
+  text-align: center;
+  text-shadow:  0px 0px 10px gold,
+                0px 0px 20px gold,
+                0px 0px 30px gold,
+                0px 0px 40px gold;
+}
 .neon1 {
   color: #fff;
 
@@ -48,6 +69,17 @@
 
 }
 
+.neonRedh {
+  color: #fff;
+
+  text-align: center;
+  text-shadow:  0px 0px 10px red,
+                0px 0px 20px red,
+                0px 0px 30px red,
+                0px 0px 40px red;
+
+}
+
 .neon3 {
   color: #fff;
 
@@ -61,6 +93,15 @@
                 0px 0px 70px blue;
 }
 
+.neon3h {
+  color: #fff;
+
+  text-align: center;
+  text-shadow:  0px 0px 10px blue,
+                0px 0px 20px blue,
+                0px 0px 30px blue,
+                0px 0px 40px blue;
+}
 .neonPink {
   color: #fff;
 
@@ -99,6 +140,16 @@
                 0px 0px 60px silver,
                 0px 0px 70px silver;
 }
+
+.neonSilverh {
+  color: #fff;
+
+  text-align: center;
+  text-shadow:  0px 0px 10px silver,
+                0px 0px 20px silver,
+                0px 0px 30px silver,
+                0px 0px 40px silver;
+              }
 
 .neonLime {
   color: #fff;

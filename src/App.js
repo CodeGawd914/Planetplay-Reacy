@@ -14,7 +14,7 @@ import Home from './Containers/Home'
 import Footer from "./Containers/Footer"
 import BdayParties from './Containers/BdayParties'
 import Gallary from './Components/Gallary'
-
+import Contact from './Components/Contact'
 
 
 
@@ -45,6 +45,7 @@ class App extends Component {
       <br></br>
       <Switch>
         <Route exact path='/Gallary' component ={Gallary}/>
+        <Route exact path='/Contact' component ={Contact}/>
         <Route exact path="/Cosmic" component={Cosmic}/>
         <Route exact path="/AboutUs" component={AboutUs}/>
         <Route exact path="/Attractions" component={Attractions}/>
@@ -53,7 +54,9 @@ class App extends Component {
         <Route exact path="/Classes" component={Classes}/>
         <Route exact path="/Schedule" component={Schedule}/>
         <Route exact path="/Waiver" component={Waiver}/>
+        <Route exact path='/home' component={Home} />
         <Route exact path='/' component={Home} />
+
       </Switch>
       <br></br>
       <br></br>

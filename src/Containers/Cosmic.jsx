@@ -15,7 +15,7 @@ class Cosmic extends Component {
     return (
       <React.Fragment className="cards">
       <div>
-        <h1 className='w3-text-white neon1'>Welcome to Cosmic Cafe</h1>
+        <h1 className='w3-text-white neon1'>Cosmic Cafe</h1>
       </div>
       <br></br>
       <Grid>

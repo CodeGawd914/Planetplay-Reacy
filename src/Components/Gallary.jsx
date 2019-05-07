@@ -1,33 +1,32 @@
 import React, { Component } from 'react';
-import {buildUrl} from 'react-instafeed'
-import InstagramFeed from '../Components/InstagramFeed'
+import { Card, Icon, Image } from 'semantic-ui-react'
 
-const options = {
-  clientId: 	'9298471ce64844039cd83176ba0533e4',
-  get: 'user', // popular, user
-  locationId: null,
-  resolution: 'standard_resolution', // thumbnail, low_resolution, standard_resolution
-  sortBy: 'none', // none, least-commented, least-liked, least-recent, most-commented, most-liked, most-recent, random
-  tagName: null,
-  userId: 8481222760,
-}
-
-const instragramURL = buildUrl(options)
 
 class Gallary extends Component {
+  state = {
+    data: []
+  }
 
-componentDidMount(){
-  console.log('tester');
-  fetch('https://api.instagram.com/v1/users/self/media/recent/?access_token=9298471ce64844039cd83176ba0533e4')
-  .then(res => res.json())
-  .then(console.log)
-}
+  componentDidMount(){
+    fetch('https://api.instagram.com/v1/users/self/media/recent/?access_token=8481222760.9298471.64348a605e254531851e508b3df34e9b')
+    .then(res => res.json())
+    .then((data) => this.setState({data: data.data}))
+  }
+
   render() {
+    console.log('tester',this.state);
 
-
+    let list = this.state.data.map(data =>
+      <Card key={data.id}>
+      <Image src={data.images.standard_resolution.url} />
+      <Card.Content>
+      <Card.Header>{data.caption.text}</Card.Header>
+    </Card.Content>
+      </Card>
+    )
     return (
-      <div>
-        <InstagramFeed/>
+      <div className='grid'>
+      {list}
       </div>
     );
   }

@@ -1,11 +1,12 @@
 import React from 'react';
 import logo from '../images/logoLong.jpg'
 import {Image,Grid, Segment, Button} from 'semantic-ui-react'
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Home = () => {
   const list = ['Cosmic Cafe']
   return (
-    <div className="smooth">
+    <div id='home' className="smooth">
     <Image centered src={logo} size='huge'/>
     <h1 className='w3-text-white neon3'>
       Hello Whats poppin video area
@@ -18,8 +19,8 @@ const Home = () => {
     <Grid.Column>
   <Segment id='card2' textAlign='center'><br></br><br></br><h1 className='neon3'>Jungle Gym</h1><br></br><br></br></Segment>
     </Grid.Column>
-    <Grid.Column>
-    <Segment id='card3' textAlign='center'><br></br><br></br><h1 className='neonPink'>Arcade</h1><br></br><br></br></Segment>
+    <Grid.Column as={Link} to='/Attractions'>
+    <Segment id='card3' textAlign='center' ><br></br><br></br><h1 className='neonPink'>Arcade</h1><br></br><br></br></Segment>
     </Grid.Column>
     <Grid.Column>
   <Segment id='card4' textAlign='center'><br></br><br></br><h1 className='neonAqua'>Toddler Time</h1><br></br><br></br></Segment>

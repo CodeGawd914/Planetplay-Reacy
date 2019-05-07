@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import {Grid, Image, List,Icon, Header, Container } from 'semantic-ui-react'
-import {Link} from 'react-router-dom'
+import { HashLink as Link } from 'react-router-hash-link';
 import logo from '../images/logoLong.jpg'
-
+import planet from '../images/planet.png'
+import rocket from '../images/rocket.png'
+import star from '../images/star.png'
 
 
 
@@ -13,14 +15,14 @@ class Footer extends Component {
       <footer id="footer" className="w3-container w3-padding-64 w3-center w3-opacity w3-xlarge" >
       <Grid divided='vertically'>
         <Grid.Row columns={3}>
-          <Grid.Column>
-              <Image className="" centered size='small' src='http://www.clker.com/cliparts/p/i/0/Y/B/m/large-yellow-star-md.png' />
+          <Grid.Column  mobile={16} tablet={8} computer={4}>
+              <Image className="" centered size='massive' src={star}/>
           </Grid.Column>
-          <Grid.Column>
-            <Image className="" centered size='small' src='http://www.pngall.com/wp-content/uploads/2/Rocket-PNG-Download-Image.png' />
+          <Grid.Column  mobile={16} tablet={8} computer={8}>
+            <Image className="" centered size='massive' src={rocket}/>
           </Grid.Column>
-          <Grid.Column>
-            <Image className="" centered size='small' src='http://clipart-library.com/data_images/26276.png' />
+          <Grid.Column  mobile={16} tablet={8} computer={4}>
+            <Image className="" centered size='big' src={planet} />
           </Grid.Column>
         </Grid.Row>
 
@@ -58,37 +60,37 @@ class Footer extends Component {
       <Grid.Row columns={4}>
        <Grid.Column className='footer3' >
          <List>
-          <List.Item as={Link} to="">About Us </List.Item>
-          <List.Item as={Link} to="">Policies </List.Item>
-          <List.Item as={Link} to="">Waiver </List.Item>
-          <List.Item as={Link} to="">Schedule</List.Item>
-          <List.Item as={Link} to="">Open Play</List.Item>
-          <List.Item as={Link} to="">Special Events</List.Item>
-          <List.Item as={Link} to="">Classes</List.Item>
-          <List.Item as={Link} to="">Calandar</List.Item>
+          <List.Item as={Link} to="/AboutUs#about">About Us </List.Item>
+          <List.Item as={Link} to="/AboutUs#Policies">Policies</List.Item>
+          <List.Item as={Link} to="/Waiver#wave">Waiver </List.Item>
+          <List.Item as={Link} to="/Schedule#openPlay">Schedule</List.Item>
+          <List.Item as={Link} to="/Schedule#openPlay">Open Play</List.Item>
+          <List.Item as={Link} to="/Schedule#Events">Special Events</List.Item>
+          <List.Item as={Link} to="/Schedule#classes">Classes</List.Item>
+          <List.Item as={Link} to="/Schedule#calendar">Calendar</List.Item>
          </List>
        </Grid.Column>
        <Grid.Column className='footer3'>
          <List>
-          <List.Item as={Link} to='/'>Birthday Parties</List.Item>
-          <List.Item as={Link} to="">Packages</List.Item>
-          <List.Item as={Link} to="">Add-ons</List.Item>
-          <List.Item as={Link} to="">Attractions</List.Item>
-          <List.Item as={Link} to="">Jungle gym</List.Item>
-          <List.Item as={Link} to="">Bounce House</List.Item>
-          <List.Item as={Link} to="">Arcade</List.Item>
-          <List.Item as={Link} to="">Galaxy Trading</List.Item>
+          <List.Item as={Link} to='/BdayParties#para'>Birthday Parties</List.Item>
+          <List.Item as={Link} to="/BdayParties#Packages">Packages</List.Item>
+          <List.Item as={Link} to="/BdayParties#Add">Add-ons</List.Item>
+          <List.Item as={Link} to="/Attractions#attract">Attractions</List.Item>
+          <List.Item as={Link} to="/Attractions#Jungle">Jungle gym</List.Item>
+          <List.Item as={Link} to="/Attractions#Bounce">Bounce House</List.Item>
+          <List.Item as={Link} to="/Attractions#Arcade">Arcade</List.Item>
+          <List.Item as={Link} to="/Attractions#Trading">Galaxy Trading</List.Item>
          </List>
        </Grid.Column>
        <Grid.Column className='footer3'>
         <List>
-         <List.Item as={Link} to="">Toddler Area</List.Item>
-         <List.Item as={Link} to="">Cosmic Cafe</List.Item>
-         <List.Item as={Link} to="">Connect with us</List.Item>
-         <List.Item as={Link} to="">Facebook</List.Item>
-         <List.Item as={Link} to="">Instagram</List.Item>
-         <List.Item as={Link} to="">Sensitive Space Hours</List.Item>
-         <List.Item as={Link} to="">Planet Play Home</List.Item>
+         <List.Item as={Link} to="/Attractions#Toddler">Toddler Area</List.Item>
+         <List.Item as={Link} to="/Attractions#Cosmic">Cosmic Cafe</List.Item>
+         <List.Item as={Link} to="/Contact#start">Connect with us</List.Item>
+         <List.Item> <a href="https://www.facebook.com/planetplayny" target="_blank">Facebook</a></List.Item>
+         <List.Item> <a href="https://www.instagram.com/planetplayny" target="_blank">Instagram</a></List.Item>
+         <List.Item as={Link} to='/Schedule#Sss'>Sensitive Space Hours</List.Item>
+         <List.Item as={Link} to="/home">Planet Play Home</List.Item>
         </List>
         </Grid.Column>
        <Grid.Column className='footer3 neonSilver'>
