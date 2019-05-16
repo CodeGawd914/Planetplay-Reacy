@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import {Grid, Image, List,Icon, Header, Container } from 'semantic-ui-react'
 import { HashLink as Link } from 'react-router-hash-link';
 import logo from '../images/logoLong.jpg'
-import planet from '../images/planet.png'
-import rocket from '../images/rocket.png'
-import star from '../images/star.png'
+import planet from '../images/Planet.png'
+import rocket from '../images/Rocket.png'
+import ufo from '../images/UFO.png'
 
 
 
@@ -15,13 +15,13 @@ class Footer extends Component {
       <footer id="footer" className="w3-container w3-padding-64 w3-center w3-text-pink w3-opacity w3-xlarge" >
       <Grid divided='vertically'>
         <Grid.Row columns={3}>
-          <Grid.Column  mobile={16} tablet={8} computer={5}>
-              <Image className="" centered size='big' src={star}/>
+          <Grid.Column   width={6}>
+              <Image className="" centered size='big' src={ufo}/>
           </Grid.Column>
-          <Grid.Column  mobile={16} tablet={8} computer={5}>
+          <Grid.Column  width={4}>
             <Image className="" centered size='big' src={rocket}/>
           </Grid.Column>
-          <Grid.Column  mobile={16} tablet={8} computer={5}>
+          <Grid.Column  width={6}>
             <Image className="" centered size='big' src={planet} />
           </Grid.Column>
         </Grid.Row>
