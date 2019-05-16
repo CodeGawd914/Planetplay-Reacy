@@ -48,6 +48,8 @@ class Contact extends Component {
       <Form.Field control={TextArea} name='comment' value={this.state.comment} onChange={this.handleChange} label='Comments & Questions' placeholder='Tell us what you think' />
       <Form.Field control={Button}>Submit</Form.Field>
     </Form>
+    <br></br>
+    <br></br>
     <Gallery/>
     </div>
   </div>
