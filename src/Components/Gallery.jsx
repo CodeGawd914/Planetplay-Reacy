@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Card, Icon, Image } from 'semantic-ui-react'
+import { Card, Icon, Image, Grid} from 'semantic-ui-react'
 
 
-class Gallary extends Component {
+class Gallery extends Component {
   state = {
     data: []
   }
@@ -16,21 +16,22 @@ class Gallary extends Component {
   render() {
     console.log('tester',this.state);
 
-    let list = this.state.data.map(data =>
+    let list = this.state.data.map(data => <Grid.Column>
       <Card key={data.id}>
-      <Image src={data.images.standard_resolution.url} />
-      <Card.Content>
-      <Card.Header>{data.caption.text}</Card.Header>
-    </Card.Content>
+      <a href="https://www.instagram.com/planetplayny" target="_blank">
+        <Image src={data.images.standard_resolution.url} /></a>
       </Card>
+      </Grid.Column>
     )
     return (
       <div className='grid'>
+      <Grid columns={3} divided>
       {list}
+      </Grid>
       </div>
     );
   }
 
 }
 
-export default Gallary;
+export default Gallery;

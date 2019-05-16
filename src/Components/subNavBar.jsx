@@ -5,7 +5,7 @@ import logo from '../images/logo-round.jpg'
 
 const SubNavBar = () => {
   return (
-    <Menu borderless fluid className="ui stackable container menu" inverted size='huge'>
+    <Menu  stackable borderless fluid  inverted size='huge'>
       <Link to="/">
           <Menu.Item position='left'>
              <Image src={logo} size='tiny'/>
@@ -23,7 +23,7 @@ const SubNavBar = () => {
                 <Dropdown.Item as={Link} text="Open Play" to='/Schedule#openPlay'/>
                 <Dropdown.Item as={Link} text="Special Events" to='/Schedule#Events'/>
                 <Dropdown.Item as={Link} text="Classes" to='/Schedule#classes'/>
-                <Dropdown.Item as={Link} text="Calandar" to='/Schedule#calendar'/>
+                <Dropdown.Item as={Link} text="Calendar" to='/Schedule#calendar'/>
                 <Dropdown.Item as={Link} text="Sensitive Space Hours" to='/Schedule#Sss'/>
               </Dropdown.Menu>
             </Dropdown>
@@ -37,7 +37,6 @@ const SubNavBar = () => {
           <Dropdown item text='Attractions'>
             <Dropdown.Menu>
               <Dropdown.Item></Dropdown.Item>
-
               <Dropdown.Item as={Link} text='Attractions' to='/Attractions'/>
               <Dropdown.Item as={Link} text='Jungle Gym' to='/Attractions#Jungle'/>
               <Dropdown.Item as={Link} text='Bounce House' to='/Attractions#Bounce'/>
@@ -47,15 +46,7 @@ const SubNavBar = () => {
               <Dropdown.Item as={Link} text='Cosmic Cafe' to='/Attractions#Cosmic'/>
             </Dropdown.Menu>
           </Dropdown>
-          <Dropdown item text='Connect With Us'>
-            <Dropdown.Menu>
-              <Dropdown.Item></Dropdown.Item>
-              <Dropdown.Item as={Link} text='Contact Us' to='/Contact'/>
-              <Dropdown.Item as={Link} text='Gallery' to='/Gallary'/>
-            </Dropdown.Menu>
-          </Dropdown>
-
-
+          <Menu.Item as={Link} to='/Contact'  name='Connect With Us'/>
           </Menu.Menu>
         </Menu>
   )

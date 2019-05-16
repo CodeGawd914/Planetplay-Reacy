@@ -12,16 +12,16 @@ class Footer extends Component {
 
   render() {
     return (
-      <footer id="footer" className="w3-container w3-padding-64 w3-center w3-opacity w3-xlarge" >
+      <footer id="footer" className="w3-container w3-padding-64 w3-center w3-text-pink w3-opacity w3-xlarge" >
       <Grid divided='vertically'>
         <Grid.Row columns={3}>
-          <Grid.Column  mobile={16} tablet={8} computer={4}>
-              <Image className="" centered size='massive' src={star}/>
+          <Grid.Column  mobile={16} tablet={8} computer={5}>
+              <Image className="" centered size='big' src={star}/>
           </Grid.Column>
-          <Grid.Column  mobile={16} tablet={8} computer={8}>
-            <Image className="" centered size='massive' src={rocket}/>
+          <Grid.Column  mobile={16} tablet={8} computer={5}>
+            <Image className="" centered size='big' src={rocket}/>
           </Grid.Column>
-          <Grid.Column  mobile={16} tablet={8} computer={4}>
+          <Grid.Column  mobile={16} tablet={8} computer={5}>
             <Image className="" centered size='big' src={planet} />
           </Grid.Column>
         </Grid.Row>
@@ -93,10 +93,10 @@ class Footer extends Component {
          <List.Item as={Link} to="/home">Planet Play Home</List.Item>
         </List>
         </Grid.Column>
-       <Grid.Column className='footer3 neonSilver'>
-       <Header icon textAlign='center'>
-     <Header.Content>418 Bedford Avenue Bellmore, NY 11710</Header.Content>
-     <Header.Content>516-369-3260</Header.Content>
+       <Grid.Column className='footer3 smooth w3-text-white neon1h'>
+       <Header icon textAlign='center' className='w3-text-white'>
+     <Header.Content className='w3-text-white'>418 Bedford Avenue Bellmore, NY 11710</Header.Content>
+     <Header.Content className='w3-text-white'>516-369-3260</Header.Content>
      <br></br>
      <Header.Content>Hours</Header.Content>
    </Header>

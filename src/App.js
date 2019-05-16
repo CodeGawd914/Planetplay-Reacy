@@ -13,7 +13,7 @@ import Cosmic from './Containers/Cosmic'
 import Home from './Containers/Home'
 import Footer from "./Containers/Footer"
 import BdayParties from './Containers/BdayParties'
-import Gallary from './Components/Gallary'
+import Gallery from './Components/Gallery'
 import Contact from './Components/Contact'
 
 
@@ -43,8 +43,9 @@ class App extends Component {
           <div id="stars3"></div>
         </div>
       <br></br>
+      <div className='margin13  w3-text-white gilroy'>
       <Switch>
-        <Route exact path='/Gallary' component ={Gallary}/>
+        <Route exact path='/Gallery' component ={Gallery}/>
         <Route exact path='/Contact' component ={Contact}/>
         <Route exact path="/Cosmic" component={Cosmic}/>
         <Route exact path="/AboutUs" component={AboutUs}/>
@@ -58,6 +59,7 @@ class App extends Component {
         <Route exact path='/' component={Home} />
 
       </Switch>
+      </div>
       <br></br>
       <br></br>
       <br></br>

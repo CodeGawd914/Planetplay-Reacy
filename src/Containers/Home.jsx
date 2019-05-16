@@ -2,10 +2,14 @@ import React from 'react';
 import logo from '../images/logoLong.jpg'
 import {Image,Grid, Segment, Button} from 'semantic-ui-react'
 import { HashLink as Link } from 'react-router-hash-link';
+import BlurAdd from '../Components/blurAdd'
+
 
 const Home = () => {
   const list = ['Cosmic Cafe']
   return (
+    <React.Fragment>
+    <BlurAdd/>
     <div id='home' className="smooth">
     <Image centered src={logo} size='huge'/>
     <h1 className='w3-text-white neon3'>
@@ -14,10 +18,10 @@ const Home = () => {
 
       <Grid doubling columns={3}>
     <Grid.Column textAlign='centered'>
-      <Segment id='card1' textAlign='center'><br></br><br></br><h1 className='neonRed'>Cosmic Cafe</h1><br></br><br></br></Segment>
+      <Segment id='card1' textAlign='center'><br></br><br></br><h1 className='neonRed smooth16'>Cosmic Cafe</h1><br></br><br></br></Segment>
     </Grid.Column>
     <Grid.Column>
-  <Segment id='card2' textAlign='center'><br></br><br></br><h1 className='neon3'>Jungle Gym</h1><br></br><br></br></Segment>
+  <Segment id='card2' textAlign='center'><br></br><br></br><h1 className='neonGreen smooth16'>Jungle Gym</h1><br></br><br></br></Segment>
     </Grid.Column>
     <Grid.Column as={Link} to='/Attractions'>
     <Segment id='card3' textAlign='center' ><br></br><br></br><h1 className='neonPink'>Arcade</h1><br></br><br></br></Segment>
@@ -42,6 +46,7 @@ const Home = () => {
     </Grid.Column>
   </Grid>
     </div>
+      </React.Fragment>
   );
 }
 
