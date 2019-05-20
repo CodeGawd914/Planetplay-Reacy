@@ -5,6 +5,7 @@ import logo from '../images/logoLong.jpg'
 import planet from '../images/Planet.png'
 import rocket from '../images/Rocket.png'
 import ufo from '../images/UFO.png'
+import star from '../images/StarBorder.png'
 
 
 
@@ -12,6 +13,9 @@ class Footer extends Component {
 
   render() {
     return (
+      <React.Fragment>
+
+      <Image src={star}/><Image src={star}/>
       <footer id="footer" className="w3-container w3-padding-64 w3-center w3-text-pink w3-opacity w3-xlarge" >
       <Grid divided='vertically'>
         <Grid.Row columns={3}>
@@ -48,7 +52,8 @@ class Footer extends Component {
           <Icon name="facebook" size='large'/></a>
         </Grid.Column>
         <Grid.Column width={2}>
-          <Icon name='calendar' size='large' />
+          <a href="https://www.instagram.com/planetplayny" target="_blank">
+          <Icon name="instagram" size='large'/></a>
         </Grid.Column>
       </Grid.Row>
 
@@ -57,7 +62,7 @@ class Footer extends Component {
 
 
 
-      <Grid.Row columns={4}>
+      <Grid.Row relaxed='very' columns={4}>
        <Grid.Column className='footer3' >
          <List>
           <List.Item as={Link} to="/AboutUs#about">About Us </List.Item>
@@ -94,20 +99,22 @@ class Footer extends Component {
         </List>
         </Grid.Column>
        <Grid.Column className='footer3 smooth w3-text-white neon1h'>
-       <Header icon textAlign='center' className='w3-text-white'>
-     <Header.Content className='w3-text-white'>418 Bedford Avenue Bellmore, NY 11710</Header.Content>
-     <Header.Content className='w3-text-white'>516-369-3260</Header.Content>
+        <List>
+        <List.Item textAlign='center' className='w3-text-white'> 418 Bedford Avenue Bellmore, NY 11710</List.Item>
+        <List.Item>516-369-3260</List.Item>
+      <br></br>
+        <List.Item>Hours</List.Item>
      <br></br>
-     <Header.Content>Hours</Header.Content>
-   </Header>
-   <Container>Saturday & Sunday 10am - 9pm</Container>
-   <Container>Monday & Wednesday 10am - 7pm</Container>
-   <Container>Thursday Closed</Container>
-   <Container>Friday 10am - 8pm</Container>
+        <List.Item>Saturday & Sunday 10am - 9pm</List.Item>
+        <List.Item>Monday & Wednesday 10am - 7pm</List.Item>
+        <List.Item>Thursday Closed</List.Item>
+        <List.Item>Friday 10am - 8pm</List.Item>
+        </List>
        </Grid.Column>
       </Grid.Row>
       </Grid>
       </footer>
+    </React.Fragment>
     );
   }
 

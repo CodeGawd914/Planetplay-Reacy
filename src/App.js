@@ -43,7 +43,7 @@ class App extends Component {
           <div id="stars3"></div>
         </div>
       <br></br>
-      <div className='margin13  w3-text-white gilroy'>
+      <div className='margin13 w3-text-white gilroy'>
       <Switch>
         <Route exact path='/Gallery' component ={Gallery}/>
         <Route exact path='/Contact' component ={Contact}/>
