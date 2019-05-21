@@ -9,6 +9,11 @@
 }
 
 @font-face {
+  src:url(Fonts/KGNeatlyPrinted.ttf);
+  font-family: KGN;
+}
+
+@font-face {
   src:url(Fonts/Gilroy-Medium.otf);
   font-family: gilroy;
 }
@@ -25,6 +30,11 @@
 .smooth {
   font-family: KG ;
   font-size: 16px;
+}
+
+.KGN {
+  font-family: KGN;
+  font-size: 21px;
 }
 
 .smooth16 {
@@ -62,6 +72,15 @@
                 0px 0px 60px gold,
                 0px 0px 70px gold;
 }
+
+.neon1q {
+  color: #fff;
+
+  text-align: center;
+  text-shadow:  0px 0px 10px gold,
+                0px 0px 20px gold;
+}
+
 
 .neonRed {
   color: #fff;
