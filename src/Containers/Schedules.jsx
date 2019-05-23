@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Table, Icon, Segment } from 'semantic-ui-react'
 import Events from "../Components/Events"
 import Classes from '../Components/Classes'
-
+import Calendar from '../Components/Calendar'
 
 
 class Schedule extends Component {
@@ -86,7 +86,7 @@ class Schedule extends Component {
           <br></br>
   <div id='calendar'>
   <Segment  color='blue' inverted attached>
-    <h1> Testing for componneteadfsefoseisoegi</h1>
+    <Calendar/>
   </Segment>
   </div>
   <br></br>
