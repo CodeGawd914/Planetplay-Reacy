@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import { Route, Switch, withRouter} from 'react-router-dom'
 import Navbar from './Components/Navbar'
-import Particles from 'react-particles-js'
 import AboutUs from './Components/AboutUS'
 import Classes from './Components/Classes'
 import GeneralAdmission from './Components/GeneralAdmission'
@@ -18,21 +17,24 @@ import Contact from './Components/Contact'
 
 
 
-const particleOpt = {
-    particles:{
-      number: {
-        value:150,
-        density: {
-          enable: true,
-          value_area: 800
-        }
-      }
-    }
-}
-
 class App extends Component {
 
+    state={
+      user: ''
+    }
+
+
+    onSubmit = (e,email) => {
+      e.preventDefault()
+      this.setState({user:email})
+
+
+      // check if email is missing, return undefined
+        // if email exists, call subscribeToNewsletter() API method
+    };
+
   render() {
+    console.log('yooooo',this.state.user);
     return (
 
       <div className='App'>
@@ -55,8 +57,8 @@ class App extends Component {
         <Route exact path="/Classes" component={Classes}/>
         <Route exact path="/Schedule" component={Schedule}/>
         <Route exact path="/Waiver" component={Waiver}/>
-        <Route exact path='/home' component={Home} />
-        <Route exact path='/' component={Home} />
+        <Route exact path='/home' render={()=> <Home user={this.state.user} onSubmit={this.onSubmit}/>} />
+        <Route exact path='/' render={()=> <Home user={this.state.user} onSubmit={this.onSubmit}/>} />
 
       </Switch>
       </div>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import NewsLetter from './newsLetter'
 import { Button, Header, Icon, Modal } from 'semantic-ui-react'
 import { HashLink as Link } from 'react-router-hash-link';
 
@@ -10,8 +11,11 @@ export default class BlurAdd extends Component {
   handleClose = () => this.setState({ modalOpen: false })
 
   componentDidMount(){
-    this.setState({modalOpen:true})
-  }
+    if (this.props.email === ''){
+      this.setState({modalOpen:true})
+    }
+    }
+
 
   render() {
     return (
@@ -23,13 +27,8 @@ export default class BlurAdd extends Component {
       >
         <Header icon='browser' content='PlanetPlay' />
         <Modal.Content>
-          <h3>Click join to become a part of PlanetPLay's mailing list </h3>
+          <NewsLetter  onSubmit={this.props.onSubmit}/>
         </Modal.Content>
-        <Modal.Actions>
-          <Button as={Link} to="/Classes" color='green' onClick={this.handleClose} inverted>
-            <Icon name='checkmark' /> Join Now
-          </Button>
-        </Modal.Actions>
       </Modal>
     )
   }
