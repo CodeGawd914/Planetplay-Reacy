@@ -14,8 +14,8 @@ import Footer from "./Containers/Footer"
 import BdayParties from './Containers/BdayParties'
 import Gallery from './Components/Gallery'
 import Contact from './Components/Contact'
-
-
+const LIST_ID = process.env.REACT_APP_LIST_ID
+const API_KEY = process.env.REACT_APP_MAILCHIMP_API
 
 class App extends Component {
 
@@ -27,10 +27,16 @@ class App extends Component {
     onSubmit = (e,email) => {
       e.preventDefault()
       this.setState({user:email})
-
-
-      // check if email is missing, return undefined
-        // if email exists, call subscribeToNewsletter() API method
+      fetch(`https://us20.api.mailchimp.com/3.0/lists/${LIST_ID}/members`,{
+        method: 'POST',
+        mode:'no-cors',
+        headers: {
+          'Authorization': `Basic ${Buffer.from(`apikey:${API_KEY}`).toString(‘base64’)}`,
+          'Accept':'application/json',
+          'Content-type':'application/json'
+          },
+        body: JSON.stringify({email_address: email, status: 'subscribed'})
+      }).then(console.log)
     };
 
   render() {
