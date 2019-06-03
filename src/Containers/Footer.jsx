@@ -18,15 +18,17 @@ class Footer extends Component {
 
       <footer id="footer" className="w3-container w3-text-pink w3-padding-64 w3-center w3-xlarge" >
       <Grid divided='vertically'>
-        <Grid.Row columns={3}>
+        <Grid.Row stackable columns={3}>
           <Grid.Column   width={6}>
               <Image className="" centered size='big' src={ufo}/>
           </Grid.Column>
           <Grid.Column  width={4}>
-            <Image className="" centered size='big' src={rocket}/>
+            <Image className="" centered size='large' src={rocket}/>
           </Grid.Column>
           <Grid.Column  width={6}>
-            <Image className="" centered size='big' src={planet} />
+          <br></br>
+          <br></br>
+            <Image className="" centered size='medium' src={planet} />
           </Grid.Column>
         </Grid.Row>
 

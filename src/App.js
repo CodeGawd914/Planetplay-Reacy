@@ -24,20 +24,20 @@ class App extends Component {
     }
 
 
-    onSubmit = (e,email) => {
-      e.preventDefault()
-      this.setState({user:email})
-      fetch(`https://us20.api.mailchimp.com/3.0/lists/${LIST_ID}/members`,{
-        method: 'POST',
-        mode:'no-cors',
-        headers: {
-          'Authorization': `Basic ${Buffer.from(`apikey:${API_KEY}`).toString(‘base64’)}`,
-          'Accept':'application/json',
-          'Content-type':'application/json'
-          },
-        body: JSON.stringify({email_address: email, status: 'subscribed'})
-      }).then(console.log)
-    };
+    // onSubmit = (e,email) => {
+    //   e.preventDefault()
+    //   this.setState({user:email})
+    //   fetch(`https://us20.api.mailchimp.com/3.0/lists/${LIST_ID}/members`,{
+    //     method: 'POST',
+    //     mode:'no-cors',
+    //     headers: {
+    //       'Authorization': `Basic ${Buffer.from(`apikey:${API_KEY}`).toString(‘base64’)}`,
+    //       'Accept':'application/json',
+    //       'Content-type':'application/json'
+    //       },
+    //     body: JSON.stringify({email_address: email, status: 'subscribed'})
+    //   }).then(console.log)
+    // };
 
   render() {
     console.log('yooooo',this.state.user);

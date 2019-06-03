@@ -10,10 +10,10 @@ export async function subscribe({ email }) {
 await new Promise((resolve, reject) => {
     request.post(
       {
-        uri: '',
+        uri: `https://us20.api.mailchimp.com/3.0/lists/${LIST_ID}/members/`,
         headers: {
           Accept: 'application/json',
-          Authorization: '',
+          Authorization: `Basic ${Buffer.from(`apikey:${API_KEY}`).toString(‘base64’)}`,
         },
         json: true,
         body: data,
