@@ -1,5 +1,6 @@
+
 import React, { Component } from 'react';
-import {Grid, Image, List,Icon, Header, Container } from 'semantic-ui-react'
+import {Grid,Segment, Image, List,Icon, Header, Container } from 'semantic-ui-react'
 import { HashLink as Link } from 'react-router-hash-link';
 import logo from '../images/logoLong.jpg'
 import planet from '../images/Planet.png'
@@ -14,21 +15,20 @@ class Footer extends Component {
   render() {
     return (
       <React.Fragment>
+    <span className="myClass" style={{width: '100%', float : 'left', paddingRight : '5px'}} > <img src={star}/> <img src={star}/></span>
 
 
       <footer id="footer" className="w3-container w3-text-pink w3-padding-64 w3-center w3-xlarge" >
       <Grid divided='vertically'>
-        <Grid.Row stackable columns={3}>
+        <Grid.Row columns={3}>
           <Grid.Column   width={6}>
               <Image className="" centered size='big' src={ufo}/>
           </Grid.Column>
           <Grid.Column  width={4}>
-            <Image className="" centered size='large' src={rocket}/>
+            <Image className="" centered size='big' src={rocket}/>
           </Grid.Column>
           <Grid.Column  width={6}>
-          <br></br>
-          <br></br>
-            <Image className="" centered size='medium' src={planet} />
+            <Image className="" centered size='big' src={planet} />
           </Grid.Column>
         </Grid.Row>
 
