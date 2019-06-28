@@ -8,7 +8,8 @@ class Attractions extends Component {
     return (
       <React.Fragment>
       <div id="attract">
-        <p>
+      <h1 className=" neon3h smooth w3-text-white">Attractions</h1>
+        <p className="KGN">
         Planet Play is not your typical indoor play space. We don’t focus on only one type of play, we focus on ALL types of play! From jungle gyms to games, Planet Play offers fun and activities like you’ve never seen before!
         </p>
       </div>
