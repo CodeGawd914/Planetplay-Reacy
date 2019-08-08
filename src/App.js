@@ -27,9 +27,8 @@ class App extends Component {
     onSubmit = (e,email) => {
       e.preventDefault()
       this.setState({user:email})
-      fetch(`http://localhost:9001/signup`,{
+      fetch('http://localhost:5000/signup',{
         method: 'POST',
-        mode:'no-cors',
         headers: {
           'Accept':'application/json',
           'Content-type':'application/json'

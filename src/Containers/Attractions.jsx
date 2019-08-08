@@ -18,7 +18,7 @@ class Attractions extends Component {
       <Segment  color='blue' inverted attached>
         <h1> Jungle Gym</h1>
         <h2> Photos</h2>
-        <p>Descirption</p>
+        <p>Our 700 square foot, two story jungle gym will catch your eye as soon as you enter Planet Play. Children will be amazed as they enter and realize just how much there is for them to do. Some of the things they will find inside include; racing slides, swirly slides, ball blaster area, plank bridge, ribbon tunnel, scaling ladder, rocket ship tunnel ladder, and more!</p>
       </Segment>
       </div>
       <br></br><br></br><br></br><br></br>

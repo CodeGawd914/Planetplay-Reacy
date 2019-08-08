@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import {Grid, Card, Image} from 'semantic-ui-react'
 import class1 from '../images/class1.jpeg'
-
+import messy from '../images/MessyPlay.jpeg'
+import preschool from '../images/Preschool.jpeg'
+import story from '../images/Storytime.jpeg'
+import cosmickids from '../images/CosmicKids.jpeg'
+import special from '../images/Special.jpeg'
 
 class Classes extends Component {
 
@@ -15,13 +19,18 @@ class Classes extends Component {
         <Grid.Column>
         <Card>
           <Card.Content>
-            <Card.Header>Matthew</Card.Header>
+            <Card.Header>Story Time &amp; Connection</Card.Header>
             <Card.Meta>
-              <span className='date'>Joined in 2015</span>
+              <span className='date'>2-4 years old</span>
             </Card.Meta>
-            <Image src={class1}/>
+            <Image src={story}/>
           <Card.Description>
-            Matthew is a musician living in Nashville.
+          <p>Storytime and Connection is the perfect way to build and encourage a love for reading. Children
+will be exposed to a variety of children’s books each semester. They will learn to listen to read
+alouds, answer age appropriate questions, form predictions, explore illustrations, and make
+connections. Stories will then come to life with connected and engaging activities and crafts.
+Children are never too young to build comprehension skills, and this class will do just that, while
+also fostering an undeniable love for reading.</p>
           </Card.Description>
           </Card.Content>
         </Card>
@@ -30,13 +39,16 @@ class Classes extends Component {
         <Grid.Column>
         <Card>
           <Card.Content>
-            <Card.Header>Matthew</Card.Header>
+            <Card.Header>Messy Play</Card.Header>
             <Card.Meta>
-              <span className='date'>Joined in 2015</span>
+              <span className='date'>All Ages</span>
             </Card.Meta>
-            <Image src={class1}/>
+            <Image src={messy}/>
           <Card.Description>
-            Matthew is a musician living in Nashville.
+          <p>Messy Play is a dress for mess type of class! Children will explore a selection of tactile and
+messy play materials. We will engage their senses, encourage creativity, and have a blast all
+while getting messy. There is shaving cream, paint, play doh, glitter, stickers, and more! The
+best part, the staff at Planet Play will do all the cleaning afterwards!</p>
           </Card.Description>
           </Card.Content>
         </Card>
@@ -45,13 +57,19 @@ class Classes extends Component {
         <Grid.Column>
         <Card>
           <Card.Content>
-            <Card.Header>Matthew</Card.Header>
+            <Card.Header>Blast Into Learning</Card.Header>
             <Card.Meta>
-              <span className='date'>Joined in 2015</span>
+              <span className='date'>Pre-K Readiness Program</span>
             </Card.Meta>
             <Image src={class1}/>
           <Card.Description>
-            Matthew is a musician living in Nashville.
+            <p>Blast into Learning is a preschool readiness program that will help your three year old learn
+foundational skills, in an engaging and age appropriate manner. This is a toddler class unlike
+any other on Long Island. Our curriculum has been designed specifically for Planet Play by
+Michelle Vasilescu, a NYS certified teacher and curriculum designer. With ten years of early
+childhood experience, Michelle has prepared  school based learning and activities that will be
+taught through hands-on thematic units. Each semester will cover two different units, allowing
+you to complete a full year of learning without ever repeating a course!</p>
           </Card.Description>
           </Card.Content>
         </Card>
@@ -60,13 +78,19 @@ class Classes extends Component {
         <Grid.Column>
         <Card>
           <Card.Content>
-            <Card.Header>Matthew</Card.Header>
+            <Card.Header>Blast Into Learning</Card.Header>
             <Card.Meta>
-              <span className='date'>Joined in 2015</span>
+              <span className='date'>Kindergarten Readiness Program</span>
             </Card.Meta>
-            <Image src={class1}/>
+            <Image src={preschool}/>
           <Card.Description>
-            Matthew is a musician living in Nashville.
+          <p>Blast into Learning is a kindergarten readiness program that will help your four year old learn
+foundational skills, in an engaging and age appropriate manner. This is a preschool class unlike
+any other on Long Island. Our curriculum has been designed specifically for Planet Play by
+Michelle Vasilescu, a NYS certified teacher and curriculum designer. With ten years of early
+childhood experience, Michelle has prepared  school based learning and activities that will be
+taught through hands-on thematic units. Each semester will cover two different units, allowing
+you to complete a full year of learning without ever repeating a course!</p>
           </Card.Description>
           </Card.Content>
         </Card>
@@ -75,13 +99,15 @@ class Classes extends Component {
         <Grid.Column>
         <Card>
           <Card.Content>
-            <Card.Header>Matthew</Card.Header>
+            <Card.Header>Cosmic Kids</Card.Header>
             <Card.Meta>
-              <span className='date'>Joined in 2015</span>
+              <span className='date'>6 months -18 months</span>
             </Card.Meta>
-            <Image src={class1}/>
+            <Image src={cosmickids}/>
           <Card.Description>
-            Matthew is a musician living in Nashville.
+          <p>Cosmic Kids is a program designed for our youngest space cadets. Through music, stories,
+movement, games and more, your little one will learn to build confidence,  develop social skills,
+and learn about things such as color, rhythm and more.</p>
           </Card.Description>
           </Card.Content>
         </Card>
@@ -90,34 +116,23 @@ class Classes extends Component {
         <Grid.Column>
         <Card>
           <Card.Content>
-            <Card.Header>Matthew</Card.Header>
+            <Card.Header>Special Needs</Card.Header>
             <Card.Meta>
-              <span className='date'>Joined in 2015</span>
+              <span className='date'>All Ages</span>
             </Card.Meta>
-            <Image src={class1}/>
+            <Image src={special}/>
           <Card.Description>
-            Matthew is a musician living in Nashville.
+          Special Needs Art and Play is a safe space for children of all abilities to participate in craft
+activities and play with other children. Sensory play, fine motor work, art activities, and free play
+are just some of the things this course includes. Our program is unique, as it has been designed
+by both a NYS Special Education teacher and a mother of a child with special needs. Michelle
+and Jacqueline have worked together to create a program that will engage your child and
+promote socialization, all while taking into consideration their individual learning styles and
+needs.
           </Card.Description>
           </Card.Content>
         </Card>
         </Grid.Column>
-
-        <Grid.Column>
-        <Card>
-          <Card.Content>
-            <Card.Header>Matthew</Card.Header>
-            <Card.Meta>
-              <span className='date'>Joined in 2015</span>
-            </Card.Meta>
-            <Image src={class1}/>
-          <Card.Description>
-            Matthew is a musician living in Nashville.
-          </Card.Description>
-          </Card.Content>
-        </Card>
-        </Grid.Column>
-
-
       </Grid>
 
 
