@@ -30,6 +30,14 @@ class Attractions extends Component {
       </Segment>
       </div>
       <br></br><br></br><br></br><br></br>
+      <div id='VR Pods'>
+      <Segment  color='blue' inverted attached>
+        <h1> Vr Pods</h1>
+        <h2> Photos</h2>
+        <p>Descirption</p>
+      </Segment>
+      </div>
+      <br></br><br></br><br></br><br></br>
       <div id='Arcade'>
       <Segment  color='blue' inverted attached>
         <h1> Arcade </h1>

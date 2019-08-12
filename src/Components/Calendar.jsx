@@ -80,18 +80,6 @@ export default class Calendar extends React.Component {
     return (
       <div>
         <h2>Calendar</h2>
-        <Table unstackable celled padded singleLine >
-          <Table.Header>
-          <Table.Row>
-          {weekdayNames}
-          </Table.Row>
-          </Table.Header>
-
-          <Table.Body>
-              {daysinmonth}
-
-          </Table.Body>
-          </Table>
 
           <BigCalendar
             style={{height: '420px'}}
