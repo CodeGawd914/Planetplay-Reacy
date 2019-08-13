@@ -17,7 +17,6 @@ class Footer extends Component {
       <React.Fragment>
     <span className="myClass" style={{width: '100%',float : 'left', paddingRight : '5px'}} > <img src={star}/> <img src={star}/><img src={star}/></span>
 
-
       <footer id="footer" className="w3-container w3-text-pink w3-padding-64 w3-center w3-xlarge" >
       <Grid divided='vertically'>
         <Grid.Row columns={3}>
@@ -31,12 +30,6 @@ class Footer extends Component {
             <Image className="" centered size='big' src={planet} />
           </Grid.Column>
         </Grid.Row>
-
-
-
-
-
-
       <Grid.Row columns={5}>
         <Grid.Column width={2}>
         <Link to="./Cosmic">

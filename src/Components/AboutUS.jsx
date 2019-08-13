@@ -28,6 +28,9 @@ class AboutUs  extends Component {
       -Planet Play is a nut free facility. We understand the severity of food allergies and would never want to put children in a harmful situation. No outside food or drinks are permitted within the facility, and all of the offerings in the Cosmic Cafe are nut-free options. Additionally, no food or drink will be allowed outside of the Cosmic Cafe lounge area. We have plenty of seating options for you to enjoy while eating and drinking.
       <br></br>
       <br></br>
+      -Planet Play is a children’s entertainment center. Adults will not permitted inside if they are not accompanied by a child. The only time there is an exception to this rule, is during private birthday parties, when the guest of honor has invited additional adults and family members.
+      <br></br>
+      <br></br>
       -Planet Play is (not responsible for loss of personal property)
       </p>
       </div>
