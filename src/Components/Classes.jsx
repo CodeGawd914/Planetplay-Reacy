@@ -17,7 +17,7 @@ class Classes extends Component {
       </p>
       <Grid columns={3} divided>
         <Grid.Column>
-        <Card>
+        <Card id='card3'>
           <Card.Content>
             <Card.Header>Story Time &amp; Connection</Card.Header>
             <Card.Meta>
@@ -37,7 +37,7 @@ also fostering an undeniable love for reading.</p>
         </Grid.Column>
 
         <Grid.Column>
-        <Card>
+        <Card id='card7'>
           <Card.Content>
             <Card.Header>Messy Play</Card.Header>
             <Card.Meta>
@@ -55,7 +55,7 @@ best part, the staff at Planet Play will do all the cleaning afterwards!</p>
         </Grid.Column>
 
         <Grid.Column>
-        <Card>
+        <Card id='card1'>
           <Card.Content>
             <Card.Header>Blast Into Learning</Card.Header>
             <Card.Meta>
@@ -76,7 +76,7 @@ you to complete a full year of learning without ever repeating a course!</p>
         </Grid.Column>
 
         <Grid.Column>
-        <Card>
+        <Card id='card9'>
           <Card.Content>
             <Card.Header>Blast Into Learning</Card.Header>
             <Card.Meta>
@@ -97,7 +97,7 @@ you to complete a full year of learning without ever repeating a course!</p>
         </Grid.Column>
 
         <Grid.Column>
-        <Card>
+        <Card id='card8'>
           <Card.Content>
             <Card.Header>Cosmic Kids</Card.Header>
             <Card.Meta>
@@ -114,7 +114,7 @@ and learn about things such as color, rhythm and more.</p>
         </Grid.Column>
 
         <Grid.Column>
-        <Card>
+        <Card id='card5'>
           <Card.Content>
             <Card.Header>Special Needs</Card.Header>
             <Card.Meta>
