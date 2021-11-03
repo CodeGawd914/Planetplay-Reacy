@@ -15,7 +15,7 @@
     "request": "^2.88.0",
     "semantic-ui-react": "^0.86.0",
     "superagent": "^5.0.5",
-    "validator": "^11.0.0",
+    "validator": "^13.7.0",
     "w3-css": "^4.1.0"
   },
   "scripts": {
