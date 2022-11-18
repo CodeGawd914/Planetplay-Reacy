@@ -11,7 +11,7 @@
     "react-particles-js": "^2.5.1",
     "react-router-dom": "^5.0.0",
     "react-router-hash-link": "^1.2.1",
-    "react-scripts": "2.1.8",
+    "react-scripts": "5.0.1",
     "request": "^2.88.0",
     "semantic-ui-react": "^0.86.0",
     "superagent": "^5.0.5",
